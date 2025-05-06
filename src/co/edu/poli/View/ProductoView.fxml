@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx"
+            fx:controller="co.edu.poli.controller.ProductoController"
+            prefWidth="400" prefHeight="300">
+
+    <children>
+        <Label fx:id="lblTitulo" text="Gestión de Producto" layoutX="120" layoutY="20" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+        <Label text="Nombre:" layoutX="30" layoutY="60" />
+        <Label fx:id="lblNombre" layoutX="100" layoutY="60" />
+
+        <Label text="Precio actual:" layoutX="30" layoutY="90" />
+        <Label fx:id="lblPrecio" layoutX="130" layoutY="90" />
+
+        <TextField fx:id="txtNuevoPrecio" promptText="Nuevo precio"
+                   layoutX="30" layoutY="130" prefWidth="200" />
+
+        <Button text="Actualizar Precio" layoutX="250" layoutY="130"
+                onAction="#actualizarPrecio" />
+
+        <TextArea fx:id="txtHistorial" layoutX="30" layoutY="170"
+                  prefWidth="320" prefHeight="100" editable="false" />
+    </children>
+</AnchorPane>
