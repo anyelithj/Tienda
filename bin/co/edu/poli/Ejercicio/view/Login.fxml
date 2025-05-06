@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.poli.Ejercicio.controller.ClienteController">
+   <children>
+      <Label layoutX="268.0" layoutY="47.0" text="Inicio sesión" />
+      <TextField layoutX="226.0" layoutY="83.0" fx:id="txtId" text="ID" />
+      <TextField layoutX="226.0" layoutY="134.0" fx:id="txtNombre" text="Nombre" />
+      <Button layoutX="37.0" layoutY="188.0" mnemonicParsing="false" text="Insertar Cliente" onAction="#handleInsertarCliente"/>
+      <Button layoutX="183.0" layoutY="188.0" mnemonicParsing="false" text="Iniciar Sesión" onAction="#handleLogin"/>
+      <Button layoutX="357.0" layoutY="188.0" mnemonicParsing="false" text="Editar Cliente" onAction="#handleEditarCliente"/>
+      <Button layoutX="500.0" layoutY="188.0" mnemonicParsing="false" text="Borrar Cliente" onAction="#handleBorrarCliente"/>
+      <Button layoutX="89.0" layoutY="273.0" mnemonicParsing="false" text="Crear Composite" onAction="#crearComposite"/>
+      <Button layoutX="268.0" layoutY="273.0" mnemonicParsing="false" text="Agregar Empleado" onAction="#agregarEmpleado"/>
+      <Button layoutX="436.0" layoutY="273.0" mnemonicParsing="false" text="Agregar Departamento" onAction="#agregarDepartamento"/>
+      <ListView fx:id="listComponentes" layoutX="50.0" layoutY="400.0" prefWidth="500.0" prefHeight="250.0"/>
+      <Label layoutX="203.0" layoutY="234.0" text="Composite: Departamento y Empleados" />
+   </children>
+</AnchorPane>
